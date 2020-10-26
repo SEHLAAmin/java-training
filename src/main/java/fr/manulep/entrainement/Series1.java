@@ -19,12 +19,10 @@ public class Series1 {
 	public static String helloWorld(String name) {
 		// 1
 
-		if (name == "Manu") {
-			return ("Hello Manu");
-		} else {
-			return ("Hello World");
-		}
-
+		if ((name == null) || (name == "")) {
+			return "Hello World";
+		} else
+			return "Hello " + name;
 	}
 
 	public static String[] removeNullElements(String[] array) {
